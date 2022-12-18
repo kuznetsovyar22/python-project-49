@@ -24,7 +24,7 @@ def game():
                 print('\'yes\' is wrong answer ;(. Correct answer was \'no\'.')
                 print(f'Let\'s try again, {name}!')
                 return 0
-        elif answer == 'yes':
+        elif answer == 'no':
             if num % 2 == 1:
                 print('Correct!')
                 count+=1
