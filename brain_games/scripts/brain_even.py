@@ -12,7 +12,8 @@ def evengame(num):
 
 
 def main():
-    startgame(evengame, evenrand)
+    eveninv = 'Answer "yes" if the number is even, otherwise answer "no".'
+    startgame(evengame, evenrand, eveninv)
 
 
 if __name__ == '__main__':

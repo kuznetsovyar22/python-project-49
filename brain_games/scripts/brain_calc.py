@@ -18,7 +18,8 @@ def calcrand():
     return f'{randint(0, 99)} {choice(operations)} {randint(0, 99)}'
 
 def main():
-    startgame(calc, calcrand)
+    calcinv = 'What is the result of the expression?'
+    startgame(calc, calcrand, calcinv)
 
 
 if __name__ == '__main__':

@@ -10,8 +10,9 @@ def welcome_user():
     return name
 
 
-def startgame(game, rand):
+def startgame(game, rand, inv):
     name = welcome_user()
+    print(inv)
     count = 0
     while count < 3:
         quest = rand()
