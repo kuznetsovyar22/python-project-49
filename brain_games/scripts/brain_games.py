@@ -15,7 +15,7 @@ def startgame(game, rand, inv):
     count = 0
     while count < 3:
         quest = rand()
-        print('Question:', str(quest).replace(',', ' ').replace("'", '').replace("[", '').replace("]", ''))  # noqa: E501
+        print('Question:', str(quest).replace(',', '').replace("'", '').replace("[", '').replace("]", ''))  # noqa: E501
         ans = prompt.string('Your answer: ')
         cor_ans = game(quest)
         if ans == cor_ans:
