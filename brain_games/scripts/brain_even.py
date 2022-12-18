@@ -1,6 +1,5 @@
-import prompt
 from random import randint
-from brain_games.scripts.brain_games import welcome_user, startgame
+from brain_games.scripts.brain_games import startgame
 
 
 def evenrand():

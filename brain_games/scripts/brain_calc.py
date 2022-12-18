@@ -1,6 +1,5 @@
-import prompt
 from random import randint, choice
-from brain_games.scripts.brain_games import welcome_user, startgame
+from brain_games.scripts.brain_games import startgame
 
 
 def calc(calcrand):
@@ -16,6 +15,7 @@ def calc(calcrand):
 def calcrand():
     operations = ['+', '-', '*']
     return f'{randint(0, 99)} {choice(operations)} {randint(0, 99)}'
+
 
 def main():
     calcinv = 'What is the result of the expression?'
