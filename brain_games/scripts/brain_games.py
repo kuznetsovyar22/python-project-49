@@ -26,3 +26,11 @@ def startgame(game, rand, inv):
             print(f'Let\'s try again, {name}!')
             return 0
     print(f'Congratulations, {name}!')
+
+
+def main():
+    welcome_user()
+
+
+if __name__ == '__main__':
+    main()
