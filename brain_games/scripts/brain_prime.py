@@ -4,14 +4,14 @@ from brain_games.scripts.brain_games import startgame
 
 def prime(num):
     count = 0
-    for i in range (2, num):
+    for i in range(2, num):
         if num % i == 0:
             count += 1
     return 'yes' if count == 0 else 'no'
 
 
 def primerand():
-    return randint(0, 99)
+    return randint(2, 99)
 
 
 def main():
