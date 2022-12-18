@@ -1,13 +1,35 @@
 #!/usr/bin/env python3
-from brain_games.cli import welcome_user
+import prompt
+from random import randint
 
 
-def greet():
+def welcome_user():
     print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    return name
+
+
+def startgame(game, rand):
+    name = welcome_user()
+    count = 0
+    while count < 3:
+        quest = rand()
+        print('Question: ', quest)
+        ans = prompt.string('Your answer: ')
+        cor_ans = game(quest)
+        if ans == cor_ans:
+            print('Correct!')
+            count+=1
+        else:
+            print(f'\'{ans}\' is wrong answer ;(. Correct answer was \'{cor_ans}\'.')
+            print(f'Let\'s try again, {name}!')
+            return 0
+    print(f'Congratulations, {name}!')
 
 
 def main():
-    welcome_user()
+    startgame()
 
 
 if __name__ == '__main__':
